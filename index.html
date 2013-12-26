@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>xCard</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<script src="xcube/xcube.js" mark="$" xtag="true"></script>
+<script src="js/TemplatePool.js"></script>
+<script src="js/index.js"></script>
+</head>
+
+<body>
+
+<aside>
+	<h1>页面集合</h1>
+	<div class="buttonPanel">
+		<button onClick="$('#CREATE_PAGE').show();">新建页面</button>
+		<button>新建组</button>
+	</div>
+	<ol>
+		<li><img/>dsfd</li>
+		<li><img/>dsfddf</li>
+	</ol>
+</aside>
+
+
+<article>
+	<h1>页面详情</h1>
+	<div id="SCREEN"></div>
+</article>
+
+<xtag:PopBox id="CREATE_PAGE">
+	<div class="box">
+		<h2>新建页面<img src="img/close.png"/></h2>
+		<fieldset>
+			<legend>选择模板</legend>
+			<xtag:ScrollPane>
+				
+			</xtag:ScrollPane>
+		</fieldset>
+		<footer>
+			<button>确定</button>
+			<button>取消</button>
+		</footer>
+	</div>
+</xtag:PopBox>
+
+<div id="CREATE_CROUP"></div>
+
+</body>
+</html>

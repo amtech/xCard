@@ -1,0 +1,123 @@
+html, body{
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	padding:0px;
+	margin:0px;
+	width:100%;
+	height:100%;
+	min-width: 1000px;
+	display:flex;
+	flex-flow:row;
+}
+
+h1{
+	text-align:center;
+	margin:0px;
+	padding:20px 0px 20px 0px;
+	background-color:#333;
+	color:#CCC;
+}
+
+fieldset{
+	margin:10px;
+	height:65%;
+}
+
+footer{
+	text-align:center;
+}
+
+aside h1:first-child{
+	background-color:#111;
+}
+
+aside{
+	flex:1;
+	background-color:#333;
+	color:white;
+}
+
+aside ol{
+	padding:0px;
+}
+
+aside li{
+	list-style:none;
+	border:1px inset #555;
+	margin:10px 25px 10px 25px;
+	text-align:center;
+	background-color:#222;
+}
+
+article{
+	flex:4;
+	background-color:#777;
+}
+
+#SCREEN{
+	width:480px;
+	height:600px;
+	border:1px inset;
+	background-color:#999;
+	margin:50px auto auto auto;
+}
+
+.buttonPanel{
+	width:100%;
+	text-align:center;
+	margin:10px 0px 10px 0px;
+}
+
+.buttonPanel button{
+	border:0px;
+	width:40%;
+	background-color:#009966;
+	color:#FFFFFF;
+	padding:5px;
+}
+
+.buttonPanel button:active{
+	background-color:#066;
+}
+
+
+xtag\:PopBox{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-image:url(../img/mask.png);
+	background-size:cover;
+}
+
+xtag\:PopBox button{
+	padding:10px 30px 10px 30px;
+	background-color:#096;
+	box-shadow: 0px 3px 8px #033;
+	border:0px;
+	color:white;
+}
+
+xtag\:PopBox .box{
+	width:70%;
+	height:70%;
+	background-color:#CCC;
+	margin:10% auto 10% auto;
+	box-shadow: 0px 0px 30px #033;
+}
+
+xtag\:PopBox .box h2{
+	background-color:#066;
+	margin:0px;
+	padding:10px;
+	color:white;
+	font-weight:bold;
+	position:relative;
+}
+
+xtag\:PopBox .box h2 img{
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+

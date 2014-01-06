@@ -322,7 +322,7 @@
 				}
 			}
 		}
-		
+				
 		_.storage = {
 			set:function(name, value){
 				localStorage.setItem(name, value);
@@ -341,6 +341,11 @@
 			Private methods
 		#############################################################################
 		*/
+		
+		function getAndroidMajorVersion(){
+			var majorVersion = String(navigator.appVersion.match(/Android [\S]+;/i));
+			return parseInt(majorVersion.match(/[\d]/));
+		}
 		
 		function duplicateObject(obj){
 			return _.merge({}, obj);

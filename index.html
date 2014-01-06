@@ -9,12 +9,12 @@
 <script src="js/index.js"></script>
 </head>
 
-<body>
+<body onLoad="init()">
 
 <aside>
 	<h1>页面集合</h1>
 	<div class="buttonPanel">
-		<button onClick="$('#CREATE_PAGE').show();">新建页面</button>
+		<button onClick="showTempBox()">新建页面</button>
 		<button>新建组</button>
 	</div>
 	<ol>
@@ -34,9 +34,9 @@
 		<h2>新建页面<img src="img/close.png"/></h2>
 		<fieldset>
 			<legend>选择模板</legend>
-			<xtag:ScrollPane>
-				
-			</xtag:ScrollPane>
+			<div style="height:90%;">
+				<xtag:ScrollPane id="PREW_BOX"></xtag:ScrollPane>
+			</div>
 		</fieldset>
 		<footer>
 			<button>确定</button>
